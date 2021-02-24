@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Ethan Amar Bechtol's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+</head>
+<body>
+<div id="content">
+<!--    <h1>Ethan Amar Bechtol</h1>-->
+    <div class="portfolio-header">
+        <div class="inline-image-text">
+            <div class="inline-text" style="padding-right: 50px">
+                <h1>Ethan Amar Bechtol</h1>
+                <h3>Aspiring software engineer</h3>
+            </div>
+            <div class="inline-image">
+                <img src="images/Ethan-Portrait.png" width="275">
+            </div>
+        </div>
+
+        <div class="inline-image-text">
+            <div class="inline-image" style="padding-right: 5px">
+                <a href="https://www.linkedin.com/in/bechtol/">
+                    <img src="images/LI-In-Bug.png" width="70">
+                </a>
+            </div>
+            <div class="inline-text">
+                <h3>/in/Bechtol</h3>
+            </div>
+
+            <div class="inline-image" style="padding-left: 100px; padding-right: 5px">
+                <a href="https://github.com/EthanBechtol">
+                    <img src="images/GitHub-Mark-120px-plus.png" width="70">
+                </a>
+            </div>
+            <div class="inline-text">
+                <h3>/EthanBechtol</h3>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <div class="description">
+        <p>This is my portfolio.</p>
+        <p>This is another paragraph!</p>
+        <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+        <p>Click here to get a random message:</p>
+        <button onclick="addRandomGreeting()">Hello</button>
+        <div id="greeting-container"></div>
+    </div>
+
+</div>
+</body>
 </html>
