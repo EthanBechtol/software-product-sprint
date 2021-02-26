@@ -2,7 +2,6 @@
     margin-top: 50px;
     margin-left: 25px;
     margin-right: 25px;
-    /*width: 800px;*/
     font-family: Arial, serif;
 }
 
@@ -39,16 +38,9 @@
     justify-content: center
 }
 
-.inline-image {
-    /*flex-basis: 40%*/
-}
-
 .inline-text {
-    /*font-size: 20px;*/
     font-size: larger;
-    /*padding-right: 50px;*/
     line-height: 15px;
-    /*max-width: 90px;*/
 }
 
 #about-me b {
