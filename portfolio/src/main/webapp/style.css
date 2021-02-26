@@ -10,6 +10,11 @@
     margin-top: 20px;
 }
 
+.fadeable {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
 /* Portfolio header style */
 .portfolio-header {
     margin-left: auto;
@@ -44,6 +49,10 @@
     /*padding-right: 50px;*/
     line-height: 15px;
     /*max-width: 90px;*/
+}
+
+#about-me b {
+    font-size: large;
 }
 
 /* Project description style */
