@@ -1,0 +1,42 @@
+#gallery-content {
+    font-family: Arial, serif;
+}
+
+#gallery-title h1 {
+    margin-bottom: 0;
+}
+
+#gallery-title h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#gallery-content h1 {
+    text-align: center;
+}
+
+
+.gallery-collection {
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.gallery-item {
+    margin: 5px;
+    /*border: 1px solid #ccc;*/
+    float: left;
+    width: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item-desc {
+    padding: 15px;
+    text-align: center;
+}
+

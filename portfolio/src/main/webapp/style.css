@@ -1,9 +1,66 @@
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: Arial, serif;
 }
 
 #greeting-container {
-  margin-top: 20px;
+    margin-top: 20px;
+}
+
+.fadeable {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+/* Portfolio header style */
+.portfolio-header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-header h1, h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/* Inline image/text style */
+.inline-image-text {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.inline-text {
+    font-size: larger;
+    line-height: 15px;
+}
+
+#about-me b {
+    font-size: large;
+}
+
+/* Project description style */
+.project {
+    padding-bottom: 7px;
+}
+
+.project h2 {
+    margin-bottom: 0;
+}
+
+.project p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.project a {
+    font-size: medium;
 }

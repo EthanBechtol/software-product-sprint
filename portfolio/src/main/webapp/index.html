@@ -1,19 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Ethan Amar Bechtol's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+</head>
+<body>
+<div id="content">
+    <!-- Portfolio header (name, profile picture, title, and LinkedIn/GitHub links) -->
+    <div class="portfolio-header">
+        <div class="inline-image-text">
+            <div class="inline-text" style="padding-right: 50px">
+                <h1>Ethan Amar Bechtol</h1>
+                <div id="subtitle" class="fadeable"><h3>Aspiring software engineer</h3></div>
+            </div>
+            <div class="inline-image">
+                <img src="images/Ethan-Portrait.png" width="275">
+            </div>
+        </div>
+
+        <div class="inline-image-text">
+            <div class="inline-image" style="padding-right: 5px">
+                <a href="https://www.linkedin.com/in/bechtol/">
+                    <img src="images/LI-In-Bug.png" width="70">
+                </a>
+            </div>
+            <div class="inline-text">
+                <h3>/in/Bechtol</h3>
+            </div>
+
+            <div class="inline-image" style="padding-left: 100px; padding-right: 5px">
+                <a href="https://github.com/EthanBechtol">
+                    <img src="images/GitHub-Mark-120px-plus.png" width="70">
+                </a>
+            </div>
+            <div class="inline-text">
+                <h3>/EthanBechtol</h3>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <!-- About me --->
+    <div id="about-me">
+        <h1>About Me</h1>
+        <p>Hello! My name is Ethan and here's a little bit about me:</p>
+        <p><b>Education:</b> I'm currently a 3rd-year computer science major at the University of California, Irvine
+            (go Anteaters!) <a href="gallery.html#UCI">see the campus</a></p>
+        <p><b>Spoken languages:</b> English, Spanish, and Hebrew</p>
+        <p><b>Programming languages:</b> C++, Java, and Python</p>
+        <p><b>Pets:</b> One 2 year old dalmatian named <a href="gallery.html#Archie">Archie</a></p>
+        <p><b>Hobbies:</b> Mountain biking, SCUBA diving, competitive gaming</p>
+        <p><b>Why computer science?:</b> Programming has been a long standing passion of mine ever since middle school
+            when I learned Java to become a freelance plugin developer for Minecraft server owners.
+            I've always been drawn to challenges and the way I see it that is just about half of what programming is.
+            The challenge of creating something new and figuring out the best way to do it has always been enjoyable and
+            computer science has taken that to a whole new level. It's something I enjoy and know I will continue to enjoy
+            for the forseeable future.
+        </p>
+    </div>
+    <br>
+
+    <!-- Personal coding project descriptions -->
+    <h1>Projects</h1>
+    <div class="project">
+        <h2>Chess Plus Plus (C++) <a href="https://github.com/EthanBechtol/ChessPlusPlus">view project</a></h2>
+        <p>Chess Plus Plus is a scalable chess-based game built from scratch with strict object-oriented principles allowing for expansion with minimal changes to the application’s core. The project includes several AI implementations such as minimax with alpha-beta pruning and iterative deepening. Resource intensive AIs support multi-threading to decrease runtime.</p>
+    </div>
+
+    <div class="project">
+        <h2>WordSearchOCR (Python) <a href="https://github.com/EthanBechtol/WordSearchOCRSolver">view project</a></h2>
+        <p>A word search puzzle solver using Google's Tesseract-OCR engine as well as OpenCV2 in order to solve a given puzzle screenshot.</p>
+    </div>
+
+    <div class="project">
+        <h2>TicTacToe Unlimited (Python) <a href="https://github.com/EthanBechtol/WordSearchOCRSolver">view project</a></h2>
+        <p>An enhanced version of TicTacToe allowing infinitely sized boards with an unlimited number of players.</p>
+    </div>
+    <br>
+
+    <!-- Image gallery link -->
+    <h2>See more images in the <a href="gallery.html">image gallery</a></h2>
+
+    <div class="description" style="display: none">
+        <p>This is my portfolio.</p>
+        <p>This is another paragraph!</p>
+        <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+        <p>Click here to get a random message:</p>
+        <button onclick="addRandomGreeting()">Hello</button>
+        <div id="greeting-container"></div>
+    </div>
+
+</div>
+</body>
 </html>
