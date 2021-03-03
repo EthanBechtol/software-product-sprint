@@ -49,3 +49,15 @@ function cycleSubtitle() {
 }
 
 window.setInterval(cycleSubtitle, 10_000);
+
+
+/**
+ * Fetches the string returned by /simple-string and sets the element with id=simple-string-response to it.
+ */
+async function showSimpleString() {
+  const serverResponse = await fetch('/simple-string');
+  const textResponse = await serverResponse.text();
+
+  const dateContainer = document.getElementById('simple-string-response');
+  dateContainer.innerText = textResponse;
+}
