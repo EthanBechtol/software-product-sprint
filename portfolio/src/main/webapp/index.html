@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="showRandomVisitedCountry();">
 <div id="content">
     <!-- Portfolio header (name, profile picture, title, and LinkedIn/GitHub links) -->
     <div class="portfolio-header">
@@ -58,6 +58,7 @@
             computer science has taken that to a whole new level. It's something I enjoy and know I will continue to enjoy
             for the forseeable future.
         </p>
+        <p><b>A random country I've visited:</b> <span id="visited-country-container" style:"inline-block">loading...</span></p>
     </div>
     <br>
 
@@ -81,6 +82,17 @@
 
     <!-- Image gallery link -->
     <h2>See more images in the <a href="gallery.html">image gallery</a></h2>
+
+    <hr>
+    <!-- Week 2 Step 2 Fetch Example -->
+    <h2>Walkthrough examples</h2>
+    <h4>Week 2 step 2 fetch():</h4>
+    <p id="simple-string-response"></p>
+    <button onclick="showSimpleString();">
+      Get a simple string
+    </button>
+
+    <h4>Week 2 step 3 JSON response:</h4>
 
     <div class="description" style="display: none">
         <p>This is my portfolio.</p>

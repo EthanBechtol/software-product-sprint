@@ -49,3 +49,31 @@ function cycleSubtitle() {
 }
 
 window.setInterval(cycleSubtitle, 10_000);
+
+
+/**
+ * Fetches the string returned by /simple-string and sets the element with id=simple-string-response to it.
+ */
+async function showSimpleString() {
+  const serverResponse = await fetch('/simple-string');
+  const textResponse = await serverResponse.text();
+
+  const dateContainer = document.getElementById('simple-string-response');
+  dateContainer.innerText = textResponse;
+}
+
+/**
+ * Fetches a list of countries I've visited, and chooses a random one to display on the page.
+ */
+async function showRandomVisitedCountry() {
+    const responseFromServer = await fetch('/country-list-json');
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const jsonResponse = await responseFromServer.json();
+
+    const countryList = jsonResponse["countries"];
+    const selectedCountry = countryList[Math.floor(Math.random() * countryList.length)];
+
+    const countryElement = document.getElementById('visited-country-container');
+    countryElement.innerText = selectedCountry;
+}
