@@ -64,3 +64,15 @@
 .project a {
     font-size: medium;
 }
+
+
+/* Contact me form style */
+#contact-me-form p {
+    margin-bottom: 0;
+
+}
+
+.form-required-asterisk {
+    color: red;
+    font-style: italic;
+}

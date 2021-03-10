@@ -91,6 +91,24 @@
         <div id="greeting-container"></div>
     </div>
 
+    <br>
+    <div id=contact-me-form>
+        <h1>Contact me!</h1>
+        <form action="/contact-me-form-handler" method="POST">
+            <p>Name<span class="form-required-asterisk">*</span>:</p>
+            <input type="text" name="name-input" required></textarea>
+            <br>
+            <p>Subject<span class="form-required-asterisk">*</span>:</p>
+            <input type="text" name="subject-input" required></textarea>
+            <br>
+            <p>Message<span class="form-required-asterisk">*</span>:</p>
+            <textarea name="message-input" required></textarea>
+            
+            <p><span class="form-required-asterisk">(* = required field)</span></p>
+            <br>
+            <input type="submit" />
+        </form>
+    </div>
 </div>
 </body>
 </html>
