@@ -18,6 +18,7 @@ public class ContactFormHandlerServlet extends HttpServlet {
     String nameValue = request.getParameter("name-input");
     String subjectValue = request.getParameter("subject-input");
     String messageValue = request.getParameter("message-input");
+    String visibilityValue = request.getParameter("message-visibility").equals("public") ? "Public" : "Private";
 
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");  
     LocalDateTime now = LocalDateTime.now();  
@@ -25,6 +26,7 @@ public class ContactFormHandlerServlet extends HttpServlet {
 
     // Build response string based on input values.
     StringBuilder sb = new StringBuilder();
+    sb.append("Visibility: " + visibilityValue + System.lineSeparator());
     sb.append("Date: " + submissionTime + System.lineSeparator());
     sb.append("Name: " + nameValue + System.lineSeparator());
     sb.append("Subject: " + subjectValue + System.lineSeparator());

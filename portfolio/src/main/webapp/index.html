@@ -93,7 +93,7 @@
 
     <br>
     <div id=contact-me-form>
-        <h1>Contact me!</h1>
+        <h1>Contact me or leave a comment!</h1>
         <form action="/contact-me-form-handler" method="POST">
             <p>Name<span class="form-required-asterisk">*</span>:</p>
             <input type="text" name="name-input" required></textarea>
@@ -103,6 +103,16 @@
             <br>
             <p>Message<span class="form-required-asterisk">*</span>:</p>
             <textarea name="message-input" required></textarea>
+
+            <p>Would you like this message to be displayed publicly on this website?<span class="form-required-asterisk">*</span></p>
+            <fieldset id="message-visibility" style="border: 0;">
+                <label>
+                    <input type="radio" name="message-visibility" value="public" /> Yes, make this message public
+                </label>
+                <label>
+                    <input type="radio" name="message-visibility" value="private" checked/> No, keep this message private
+                </label>
+            </fieldset>
             
             <p><span class="form-required-asterisk">(* = required field)</span></p>
             <br>
